@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+body {
+    background: #232336;
+    font-family: 'Poppins';
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+.container {
+    margin: 0;
+}
+
+.navbar-brand {
+    font-family: "Cookie";
+    font-size: 70px;
+    color: #fff!important;
+    margin-left: 50px;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF!important;
+    margin: 10px 30px 0;
+}
+
+.intro {
+    margin-top: 70px;
+}
+
+.me {
+    width: 350px;
+    height: 360px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    background: rgba(196, 196, 196, 0.1);
+    width: 350px;
+    height: 360px;
+}
+
+.intro h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.blue {
+    color: #427ED8!important;
+}
+
+.intro p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    padding-right: 60px;
+}
+
+.intro button {
+    background: #427ED8;
+    border-radius: 10px;
+}
+
+.about {
+    background: url("about-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    padding: 10% 5%;
+}
+
+.exp {
+    padding: 10% 5%;
+}
+
+.about-head {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.about h2,
+.exp h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.education h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.education p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.education h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    color: #427ED8;
+}
+
+.skill {
+    background: #333344;
+    border: 1px solid #427ED8;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 103px;
+    height: 25px;
+    margin: 5% 0;
+}
+
+.skill p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.underline {
+    width: 103px;
+    height: 7px;
+    background: #427ED8;
+    border-radius: 9px;
+    position: absolute;
+    top: 54px;
+}
+
+.project {
+    height: 102px;
+    width: 100%;
+    background: #232336;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.exp {
+    background: url("exp-bg.png") polygon(100% 39%, 100% 100%, 0 67%, 0 0);
+}
