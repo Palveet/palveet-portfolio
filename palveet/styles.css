@@ -79,11 +79,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    padding: 10% 5%;
+    padding: 5% 2%;
 }
 
 .exp {
-    padding: 10% 5%;
+    padding: 5% 2%;
+    width: 100vw;
 }
 
 .about-head {
@@ -101,6 +102,7 @@ body {
     font-size: 30px;
     line-height: 45px;
     color: #FFFFFF;
+    margin-left: 10%;
 }
 
 .education h3 {
@@ -115,8 +117,8 @@ body {
 .education p {
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 18px;
     text-align: justify;
     color: #FFFFFF;
 }
@@ -137,7 +139,7 @@ body {
     border-radius: 3px;
     width: 103px;
     height: 25px;
-    margin: 5% 0;
+    margin: 45% 0;
 }
 
 .skill p {
@@ -164,8 +166,66 @@ body {
     background: #232336;
     border-radius: 10px;
     margin: 2%;
+    padding: 1% 2%;
 }
 
-.exp {
-    background: url("exp-bg.png") polygon(100% 39%, 100% 100%, 0 67%, 0 0);
+.project h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.project p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: justify;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.project h4 a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+    color: #427ED8;
+}
+
+.education li {
+    margin: 10% 2%;
+    list-style-image: url("list-style.png");
+}
+
+.education {
+    padding: 2% 4%;
+}
+
+.certificate {
+    width: 100%;
+    height: 100%;
+    margin: 5% auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.overlay-cert {
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    background: #333344;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+.cert {
+    padding: 2% 4%;
+    width: 100vw;
 }
