@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 body {
     background: #232336;
     font-family: 'Poppins';
@@ -13,11 +12,11 @@ body {
     margin: 0;
 }
 
-.navbar-brand {
-    font-family: "Cookie";
-    font-size: 70px;
-    color: #fff!important;
+.navbar-brand img {
     margin-left: 50px;
+    margin-top: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .nav-link {
@@ -30,6 +29,8 @@ body {
 
 .intro {
     margin-top: 70px;
+    width: 100vw;
+    padding: 0 5%;
 }
 
 .me {
@@ -79,7 +80,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    padding: 5% 2%;
+    padding: 5%;
+}
+
+q {
+    color: #fff;
+    font-size: 13px;
 }
 
 .exp {
@@ -160,6 +166,16 @@ body {
     top: 54px;
 }
 
+.underline-reach {
+    width: 103px;
+    height: 7px;
+    background: #427ED8;
+    border-radius: 9px;
+    position: absolute;
+    top: 54px;
+    left: 41.5%;
+}
+
 .project {
     height: 102px;
     width: 100%;
@@ -228,4 +244,43 @@ body {
 .cert {
     padding: 2% 4%;
     width: 100vw;
+}
+
+.line {
+    width: 0px;
+    height: 260px;
+    border: 1px dashed #427ED8;
+    position: absolute;
+    top: 24.5%;
+    left: 13.5%;
+}
+
+.social {
+    color: #427ED8;
+    margin-top: 5%;
+}
+
+.social a {
+    margin: 5%;
+}
+
+.social a svg {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    background: #333344;
+    margin-top: 5%;
+    height: 120px;
+    padding: 2%;
+}
+
+footer p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 10px 0 0 0;
+    color: #FFFFFF;
 }
