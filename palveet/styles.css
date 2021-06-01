@@ -27,6 +27,13 @@ body {
     margin: 10px 30px 0;
 }
 
+.nav-link:hover {
+    text-decoration: underline 2px #427ED8;
+    text-underline-position: under;
+    color: #427ED8!important;
+    transition: ease-in-out 1s;
+}
+
 .intro {
     margin-top: 70px;
     width: 100vw;
@@ -34,8 +41,8 @@ body {
 }
 
 .me {
-    width: 350px;
-    height: 360px;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -44,8 +51,8 @@ body {
     top: -35px;
     left: -35px;
     background: rgba(196, 196, 196, 0.1);
-    width: 350px;
-    height: 360px;
+    width: 100%;
+    height: 100%;
 }
 
 .intro h1 {
@@ -120,6 +127,10 @@ q {
     color: #FFFFFF;
 }
 
+.date {
+    font-size: 11px;
+}
+
 .education p {
     font-style: normal;
     font-weight: 500;
@@ -127,13 +138,14 @@ q {
     line-height: 18px;
     text-align: justify;
     color: #FFFFFF;
+    margin: 0;
 }
 
 .education h4 {
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 18px;
     text-align: justify;
     color: #427ED8;
 }
@@ -146,6 +158,13 @@ q {
     width: 103px;
     height: 25px;
     margin: 45% 0;
+}
+
+.skill:hover {
+    background: #427ED8;
+    color: #fff;
+    transition: ease-in-out 1s;
+    cursor: pointer;
 }
 
 .skill p {
@@ -183,6 +202,12 @@ q {
     border-radius: 10px;
     margin: 2%;
     padding: 1% 2%;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 1s;
+    box-shadow: #232336 0 10px 10px 0;
 }
 
 .project h3 {
@@ -231,6 +256,13 @@ q {
     border-radius: 10px;
 }
 
+.certificate:hover {
+    transform: scale(1.02);
+    transition: ease-in-out 1s;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.25rem #fff);
+}
+
 .overlay-cert {
     position: absolute;
     top: -8px;
@@ -248,7 +280,7 @@ q {
 
 .line {
     width: 0px;
-    height: 260px;
+    height: 230px;
     border: 1px dashed #427ED8;
     position: absolute;
     top: 24.5%;
@@ -269,6 +301,13 @@ q {
     height: 40px;
 }
 
+.social a svg:hover {
+    transform: scale(1.2);
+    color: #fff;
+    transition: ease-in-out 1s;
+    filter: drop-shadow(0 0 0.75rem #fff);
+}
+
 footer {
     background: #333344;
     margin-top: 5%;
@@ -283,4 +322,97 @@ footer p {
     line-height: 22px;
     margin: 10px 0 0 0;
     color: #FFFFFF;
+}
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate( 0.0deg)
+    }
+}
+
+@media(max-width:1026px) {
+    .me {
+        height: 95%;
+    }
+    .overlay {
+        height: 95%;
+    }
+    .intro {
+        margin-bottom: 70px;
+    }
+    .intro h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .intro p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .intro button {
+        width: 40%;
+        font-size: 15px;
+    }
+    .about-head {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .about h2,
+    .exp h2 {
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .underline {
+        width: 60px;
+        height: 5px;
+        background: #427ED8;
+        border-radius: 9px;
+        position: absolute;
+        top: 45px;
+    }
+    .education li {
+        margin: 5% auto 10%;
+    }
+    .line {
+        display: none!important;
+    }
+    .skill {
+        margin: 45% auto;
+    }
 }
