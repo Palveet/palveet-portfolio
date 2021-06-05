@@ -82,12 +82,15 @@ body {
     border-radius: 10px;
 }
 
+.intro button a {
+    color: #fff;
+}
+
 .about {
-    background: url("about-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 91%);
+    background-color: rgba(196, 196, 196, 0.1);
     width: 100vw;
-    padding: 5%;
+    padding: 10%;
 }
 
 q {
@@ -96,7 +99,7 @@ q {
 }
 
 .exp {
-    padding: 5% 2%;
+    padding: 10%;
     width: 100vw;
 }
 
@@ -278,15 +281,6 @@ q {
     width: 100vw;
 }
 
-.line {
-    width: 0px;
-    height: 230px;
-    border: 1px dashed #427ED8;
-    position: absolute;
-    top: 24.5%;
-    left: 13.5%;
-}
-
 .social {
     color: #427ED8;
     margin-top: 5%;
@@ -322,6 +316,10 @@ footer p {
     line-height: 22px;
     margin: 10px 0 0 0;
     color: #FFFFFF;
+}
+
+ul {
+    padding: 0;
 }
 
 .wave {
@@ -366,6 +364,9 @@ footer p {
 }
 
 @media(max-width:1026px) {
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("menu1.png");
+    }
     .me {
         height: 95%;
     }
@@ -391,6 +392,9 @@ footer p {
         font-size: 30px;
         line-height: 50px;
     }
+    .about {
+        clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 97%);
+    }
     .about h2,
     .exp h2 {
         font-size: 25px;
@@ -409,10 +413,90 @@ footer p {
     .education li {
         margin: 5% auto 10%;
     }
-    .line {
-        display: none!important;
-    }
     .skill {
         margin: 45% auto;
+    }
+}
+
+@media(max-width:574px) {
+    .nav-link {
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .intro .col-sm-12 {
+        margin-bottom: 15%;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .intro p {
+        padding-right: 0;
+        text-align: left;
+    }
+    .me {
+        width: 85%;
+    }
+    .overlay {
+        width: 85%;
+        left: 0;
+        top: -30px;
+    }
+    .intro button {
+        width: 60%;
+    }
+    .skill {
+        width: 90px;
+    }
+    .project {
+        height: 110px;
+    }
+    .project h3 {
+        font-size: 11px;
+        line-height: 20px;
+        padding-right: 15px;
+    }
+    .project p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .project h4 a {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .education {
+        margin-bottom: 10%;
+        padding: 2% 8%;
+    }
+    .education h3 {
+        font-size: 13px;
+    }
+    .cert {
+        margin-bottom: 15%;
+    }
+    .cert .row .col-sm-6 {
+        padding: 10%;
+    }
+    .overlay-cert {
+        position: absolute;
+        top: 20px;
+        left: 12px;
+        background: #333344;
+        border-radius: 10px;
+        width: 75%;
+        height: 75%;
+    }
+    .social a svg {
+        width: 25px;
+        height: 25px;
+    }
+    .underline-reach {
+        left: 30.5%;
+    }
+    .about {
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98.5%)
     }
 }
