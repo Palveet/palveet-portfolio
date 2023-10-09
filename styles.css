@@ -91,7 +91,7 @@ body {
 }
 
 .about {
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 91%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 94%);
     background-color: rgba(196, 196, 196, 0.1);
     width: 100vw;
     padding: 10%;
@@ -191,7 +191,6 @@ q {
     position: absolute;
     top: 54px;
 }
-
 .underline-reach {
     width: 103px;
     height: 7px;
@@ -254,6 +253,13 @@ q {
 .education {
     padding: 2% 4%;
 }
+.project-image {
+    width: 500px;
+    height: 500px;
+    margin: 5% auto;
+    position: relative;
+    border-radius: 10px;
+}
 
 .certificate {
     width: 100%;
@@ -261,6 +267,14 @@ q {
     margin: 5% auto;
     position: relative;
     border-radius: 10px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    background: none;
+    border: none;
+}
+.carousel-item{
+    transition: -webkit-transform .6s ease-out;
 }
 
 .certificate:hover {
